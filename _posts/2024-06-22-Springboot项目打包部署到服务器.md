@@ -54,7 +54,7 @@ CMD java -jar xxx.jar
 docker build -t xxx:1.0.0 -f dockerfile .
 ```
 
-> ## 三、部署到服务器
+> ## 四、部署到服务器
 
 1. 运行docker容器
 ```shell
