@@ -1,6 +1,6 @@
 ---
 title: Docker安装MySQL
-description: docker拉取、运行MySQL镜像
+description: Docker拉取、运行MySQL镜像
 date: 2024-06-24 14:00:00 +0800
 categories: [部署, Docker]
 tags: [Docker, MySQL]
@@ -51,12 +51,12 @@ docker exec -it mysql mysql -u root -p
 ```bash
 mysql -h 127.0.0.1 -u root -p
 ```
-  > 不能通过`mysql -h localhost -u root -p`访问，没有主机对应sock文件，docker内部有
+  > 不能在主机侧通过`mysql -h localhost -u root -p`访问，没有相关的sock文件
   {: .prompt-warning }
 
 > ## 数据持久化（推荐）
 
-使用docker卷来持久化数据避免因删除容器导致数据丢失
+使用 Docker 卷来持久化数据避免因删除容器导致数据丢失
 ```bash
 docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -v /my/own/datadir:/var/lib/mysql mysql:latest
 ```
