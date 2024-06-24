@@ -1,6 +1,6 @@
 ---
 title: Springboot项目打包部署到服务器
-description: 将本地Springboot项目打包、构建成docker镜像并部署到服务器
+description: 将本地Springboot项目打包、构建成Docker镜像并部署到服务器
 date: 2024-06-22 15:00:00 +0800
 categories: [部署, Springboot]
 tags: [Springboot, Docker, Linux]
