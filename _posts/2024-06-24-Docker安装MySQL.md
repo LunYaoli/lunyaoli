@@ -51,8 +51,8 @@ docker exec -it mysql mysql -u root -p
 ```bash
 mysql -h 127.0.0.1 -u root -p
 ```
-> 不能通过`mysql -h localhost -u root -p`访问，没有主机对应sock文件，docker内部有
-{: .prompt-warning }
+  > 不能通过`mysql -h localhost -u root -p`访问，没有主机对应sock文件，docker内部有
+  {: .prompt-warning }
 
 > ## 数据持久化（推荐）
 
