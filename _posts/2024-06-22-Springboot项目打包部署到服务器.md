@@ -8,7 +8,7 @@ tags: [Springboot, Docker, Linux]
 
 > ## 一、将Springboot项目打包成jar
 
-通过IntelliJ IDEA Maven插件package直接打包SpringBoot项目
+通过 IntelliJ IDEA Maven 插件package直接打包SpringBoot项目
 
 > 确保生成的jar在本地能够正常执行
 {: .prompt-info }
@@ -56,7 +56,7 @@ docker build -t xxx:1.0.0 -f dockerfile .
 
 > ## 四、部署到服务器
 
-1. 运行docker容器
+1. 运行 Docker 容器
 ```bash
 docker run -itd -p 3000:8080 xxx:1.0.0
 ```
