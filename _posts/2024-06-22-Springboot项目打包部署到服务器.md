@@ -37,7 +37,7 @@ tags: [Springboot, Docker, Linux]
 > ## 三、构建Docker镜像
 
 1. 编写dockerfile
-```shell
+```bash
 # 指定 openjdk:17 为基础镜像
 FROM openjdk:17
 # WORKDIR指令用于指定容器的一个目录， 容器启动时执行的命令会在该目录下执行
@@ -50,21 +50,21 @@ EXPOSE 8080
 CMD java -jar xxx.jar
 ```
 2. 通过docker build -t构建镜像
-```shell
+```bash
 docker build -t xxx:1.0.0 -f dockerfile .
 ```
 
 > ## 四、部署到服务器
 
 1. 运行docker容器
-```shell
+```bash
 docker run -itd -p 3000:8080 xxx:1.0.0
 ```
 2. 检查服务器端口是否放开
    1. 检查Nginx配置：[Nginx配置详解](https://soupk.github.io/posts/nginx-peizhi-xiangjie/)
    2. 查看服务器安全组是否放开对应端口
    3. 检查服务器防火墙是否放开对应端口
-   ```shell
+   ```bash
    # 查看ufw状态和端口状态 numbered为显示序号
    sudo ufw status numbered
    # 允许特定端口
